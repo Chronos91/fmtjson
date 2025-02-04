@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON Flattener</title>
+    <title>Flatten JSON Uploader</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 20px;
+            text-align: center;
         }
-        .container {
-            max-width: 500px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        textarea {
+            width: 80%;
+            height: 300px;
+            margin-top: 20px;
         }
-        pre {
-            text-align: left;
-            background: #f4f4f4;
+        button {
             padding: 10px;
-            border-radius: 5px;
-            overflow: auto;
+            margin-top: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Upload a JSON file</h2>
-        <form action="/" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" accept=".txt">
-            <button type="submit">Upload & Process</button>
-        </form>
 
-        {% if result %}
-        <h3>Flattened JSON Output:</h3>
-        <pre>{{ result | tojson(indent=4) }}</pre>
-        {% endif %}
-    </div>
+    <h2>Upload a JSON File</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Process</button>
+    </form>
+
+    {% if result %}
+        <h3>Flattened JSON Result</h3>
+        <textarea id="jsonOutput" readonly>{{ result | tojson(indent=2) }}</textarea>
+        <br>
+        <button onclick="copyToClipboard()">Copy</button>
+    {% endif %}
+
+    <script>
+        function copyToClipboard() {
+            var textArea = document.getElementById("jsonOutput");
+            textArea.select();
+            document.execCommand("copy");
+            alert("Copied to clipboard!");
+        }
+    </script>
+
 </body>
 </html>
