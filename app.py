@@ -3,14 +3,19 @@ import json
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'uploads'
-os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+app.config["UPLOAD_FOLDER"] = "uploads"
+os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
 
 
 def flatten_cookies(input_file):
-    with open(input_file, "r", encoding="utf-8") as file:
-        data = json.load(file)
+    try:
+        with open(input_file, "r", encoding="utf-8", errors="ignore") as file:
+            data = json.load(file)  # Try loading JSON
+    except json.JSONDecodeError as e:
+        print(f"JSON Decode Error: {e}")
+        return {"error": "Invalid JSON format. Ensure your file contains valid JSON."}
 
+    # Remove unwanted fields
     fields_to_remove = ["id", "phishlet", "landing_url", "username", "password", "custom", "body_tokens", "http_tokens"]
     for field in fields_to_remove:
         data.pop(field, None)
@@ -24,7 +29,7 @@ def flatten_cookies(input_file):
                     "name": attributes.get("Name", ""),
                     "path": attributes.get("Path", "/"),
                     "value": attributes.get("Value", ""),
-                    "httpOnly": attributes.get("HttpOnly", False)
+                    "httpOnly": attributes.get("HttpOnly", False),
                 })
 
     return flat_list
@@ -43,10 +48,15 @@ def index():
         if file:
             file_path = os.path.join(app.config["UPLOAD_FOLDER"], file.filename)
             file.save(file_path)
+            
+            # Try to process the file
             try:
                 flattened_result = flatten_cookies(file_path)
-            except json.JSONDecodeError:
-                return "Invalid JSON file", 400
+                if isinstance(flattened_result, dict) and "error" in flattened_result:
+                    return flattened_result["error"], 400  # Return JSON error message
+            except Exception as e:
+                print(f"Error processing file: {e}")
+                return f"Unexpected error: {str(e)}", 500  # Catch any unknown errors
 
             return render_template("index.html", result=flattened_result)
 
